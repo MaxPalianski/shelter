@@ -1,0 +1,16 @@
+:root {
+    --primary-light: rgba(241, 205,179, 1);
+    --color-dark-s: rgba(205, 205,205, 1);
+    --color-light-xl: rgba(255, 255, 255, 1);
+    --dark-l: #545454;
+    --dark-m: #4c4c4c;
+    --light-l: #fafafa;
+    --light-m: #f6f6f6;
+
+    --bg-gradient-start: rgba(91, 72, 58, 1);
+    --bg-gradient-end: rgba(38, 36, 37, 1);
+
+    --font-header: 'Georgia', serif;
+    --font-main: 'Arial', sans-serif;
+}
+

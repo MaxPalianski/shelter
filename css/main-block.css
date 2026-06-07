@@ -1,0 +1,21 @@
+.top-background {
+    background: radial-gradient(circle at top left, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    min-height: 908px; 
+    width: 100%;
+}
+.promo {
+    width: 100%;
+}
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+}
+.promo-title {
+    font-size: 44px;
+    font-family: var(--font-header);
+    font-weight: 400;
+    max-width: 310px;
+    color: var(--color-light-xl);
+    line-height: 130%;
+}
