@@ -1,5 +1,5 @@
 .top-background {
-    background: radial-gradient(circle at top left, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background: radial-gradient(ellipse at top left, rgba(91, 72, 58, 1) 0%, rgba(38, 36, 37, 1) 50%, rgba(33, 31, 32, 1) 100%);
     min-height: 908px; 
     width: 100%;
 }
@@ -49,6 +49,7 @@
     font-size: 17px;
     color: var(--color-dark-3xl);
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 .promo-img {
     max-width: 698px;
