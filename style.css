@@ -12,6 +12,21 @@
     
 }
 
+/*
+body {
+    cursor: url(./assets/icons/icon.png), default;
+}
+
+a,
+button,
+.promo-btn,
+.btn-primary,
+.btn-secondary,
+.header-nav a  {
+    cursor: url('./assets/icons/icon-hover.png'), default;
+}
+*/
+
 .wrapper {
     display: flex;
     justify-content: space-between;
