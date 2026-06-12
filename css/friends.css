@@ -1,0 +1,107 @@
+.friends {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-light-l);
+}
+
+.friends .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends-title {
+    font-family: var(--font-header);
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+    margin-bottom: 60px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+}
+
+.slider-cards {
+    display: flex;
+    gap: 90px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-light-s);
+    border-radius: 9px;
+    padding-bottom: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-family: var(--font-header);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    color: var(--color-dark-l);
+}
+
+.card .btn-secondary {
+    width: 187px;
+    margin-top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--color-light-xl);
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    
+}
+
+.card:hover .btn-secondary {
+    background-color: var(--primary-light);
+    border-color: transparent;
+    
+}
+
+.friends .btn-primary {
+    width: 261px;
+    margin-top: 60px;
+}
+
+.button-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--primary-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-right img {
+    transform: rotate(180deg);
+}
+
+.button-arrow:hover {
+    background-color: var(--primary-light);
+}
