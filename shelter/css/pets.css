@@ -116,3 +116,17 @@
     gap: 20px; 
     margin-top: 60px;
 }
+
+.pagination-current.active {
+    background-color: var(--color-primary);
+}
+
+.button-arrow:disabled {
+    border-color: var(--color-dark-s);
+    color: var(--color-dark-s);
+    cursor: not-allowed;
+}
+
+.button-arrow:disabled:hover {
+    background-color: transparent;
+}
