@@ -59,12 +59,15 @@
     cursor: pointer;
 }
 
-.pets-header-wrapper .header-nav a.active,
-.pets-header-wrapper .header-nav a:hover {
+.pets-header-wrapper .header-nav a.active {
     color: var(--color-dark-3xl);
     border-bottom: 3px solid var(--color-primary);
     pointer-events: none;
-    cursor: default;
+}
+
+.pets-header-wrapper .header-nav a:hover {
+    color: var(--color-dark-3xl);
+    border-bottom: 3px solid var(--color-primary);
 }
 
 .pets-page {

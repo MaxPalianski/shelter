@@ -25,7 +25,7 @@ header {
     color: var(--color-light-xl);
     border-bottom: 3px solid var(--color-primary);
     pointer-events: none;
-    cursor: default;
+    
 }
 
 .header-nav a:hover {
