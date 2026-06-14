@@ -75,7 +75,7 @@
 }
 
 .card:hover .btn-secondary {
-    background-color: var(--primary-light);
+    background-color: var(--color-primary);
     border-color: transparent;
     
 }
@@ -93,7 +93,7 @@
     height: 52px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid var(--primary-light);
+    border: 2px solid var(--color-primary);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -103,5 +103,5 @@
 }
 
 .button-arrow:hover {
-    background-color: var(--primary-light);
+    background-color: var(--color-primary);
 }

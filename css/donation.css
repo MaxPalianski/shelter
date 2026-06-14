@@ -1,0 +1,88 @@
+.donation {
+    background-color: var(--color-light-l);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.donation .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donation-img {
+    width: 505px;
+    height: 261px;
+}
+
+.donation-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    transform: translateY(-4px);
+}
+
+.donation-content {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 282px;
+    gap: 20px;
+}
+
+.donation-content h2 {
+    font-family: var(--font-header);
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+    font-weight: 400;
+}
+
+.donation-card {
+    display: flex;
+    align-items: center;
+    width: 349px;
+    height: 43px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    gap: 15px;
+    background-color: var(--color-primary);
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.card-number {
+    font-family: var(--font-header);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 114.99%;
+    color: var(--color-dark-l);
+    white-space: nowrap;
+}
+
+.donation-desc {
+    font-family: var(--font-header);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donation-legal {
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: var(--color-dark-m);
+}

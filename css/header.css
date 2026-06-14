@@ -23,12 +23,12 @@ header {
 
 .header-nav a.active {
     color: var(--color-light-xl);
-    border-bottom: 3px solid var(--primary-light);
+    border-bottom: 3px solid var(--color-primary);
 }
 
 .header-nav a:hover {
     color: var(--color-light-xl);
-    border-bottom: 3px solid var(--primary-light);
+    border-bottom: 3px solid var(--color-primary);
 }
 
 .logo {
@@ -38,7 +38,7 @@ header {
 
 .logo h1 {
     font-family: var(--font-header);
-    color: var(--primary-light);
+    color: var(--color-primary);
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0.06em;
