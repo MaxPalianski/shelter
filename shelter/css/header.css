@@ -24,6 +24,8 @@ header {
 .header-nav a.active {
     color: var(--color-light-xl);
     border-bottom: 3px solid var(--color-primary);
+    pointer-events: none;
+    cursor: default;
 }
 
 .header-nav a:hover {
@@ -41,7 +43,7 @@ header {
     color: inherit;
 }
 
-.logo h1 {
+.logo-title {
     font-family: var(--font-header);
     color: var(--color-primary);
     font-size: 32px;

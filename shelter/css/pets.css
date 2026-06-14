@@ -18,7 +18,7 @@
     color: inherit;
 }
 
-.pets-header-wrapper .logo h1 {
+.pets-header-wrapper .logo-title {
     font-family: var(--font-header);
     font-size: 32px;
     font-weight: 400;
@@ -53,7 +53,6 @@
     font-size: 15px;
     line-height: 160%;
     color: var(--color-dark-l);
-
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
@@ -64,6 +63,8 @@
 .pets-header-wrapper .header-nav a:hover {
     color: var(--color-dark-3xl);
     border-bottom: 3px solid var(--color-primary);
+    pointer-events: none;
+    cursor: default;
 }
 
 .pets-page {
