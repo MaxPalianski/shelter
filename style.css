@@ -5,6 +5,7 @@
 @import "./css/friends.css";
 @import "./css/help.css";
 @import "./css/donation.css";
+@import "./css/pets.css";
 @import "./css/footer.css";
 
 * {
@@ -12,6 +13,10 @@
     margin: 0;
     padding: 0;
     
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*

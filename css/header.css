@@ -36,6 +36,11 @@ header {
     flex-direction: column;
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo h1 {
     font-family: var(--font-header);
     color: var(--color-primary);
