@@ -99,6 +99,18 @@
     gap: 30px 40px;
 }
 
+.pets-cards .card h2 {
+    font-family: var(--font-header);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
 .pets-cards .card {
     background-color: var(--color-light-s);
 }
