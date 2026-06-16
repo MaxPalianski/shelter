@@ -24,6 +24,8 @@ header {
 .header-nav a.active {
     color: var(--color-light-xl);
     border-bottom: 3px solid var(--color-primary);
+    pointer-events: none;
+    
 }
 
 .header-nav a:hover {
@@ -41,7 +43,7 @@ header {
     color: inherit;
 }
 
-.logo h1 {
+.logo-title {
     font-family: var(--font-header);
     color: var(--color-primary);
     font-size: 32px;
@@ -57,4 +59,12 @@ header {
     font-weight: 400;
     letter-spacing: 0.1em;
     line-height: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 }
