@@ -67,3 +67,9 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+@media (max-width: 768px) {
+    .help-list {
+        gap: 55px 60px;
+    }
+}

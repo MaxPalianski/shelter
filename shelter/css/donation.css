@@ -86,3 +86,15 @@
     letter-spacing: 0;
     color: var(--color-dark-m);
 }
+
+@media (max-width:768px) {
+    .donation {
+        padding-bottom: 110px;
+    }
+    .donation .wrapper {
+       flex-direction: column-reverse;
+    }
+    .donation-img {
+        margin-top: 20px;
+    }
+}
