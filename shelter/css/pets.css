@@ -88,7 +88,7 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var(--color-dark-l);
-    text-align: center; 
+    text-align: center;
     margin-top: 0;
     margin-bottom: 65px;
 }
@@ -128,8 +128,8 @@
 
 .pagination {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     margin-top: 60px;
 }
 
@@ -145,4 +145,22 @@
 
 .button-arrow:disabled:hover {
     background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .pets-page {
+        padding-bottom: 80px;
+    }
+    .pets-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pets-title {
+        margin-bottom: 35px;
+    }
+    .pets-cards .card:nth-child(n + 7) {
+        display: none;
+    }
+    .pagination {
+        margin-top: 40px;
+    }
 }
