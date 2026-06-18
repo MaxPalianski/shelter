@@ -3,12 +3,14 @@ header {
     padding-top: 30px;
     padding-bottom: 90px;
 }
+
 .header-nav ul {
     display: flex;
     list-style: none;
     gap: 35px;
-    
+
 }
+
 .header-nav a {
     text-decoration: none;
     color: var(--color-dark-s);
@@ -25,7 +27,7 @@ header {
     color: var(--color-light-xl);
     border-bottom: 3px solid var(--color-primary);
     pointer-events: none;
-    
+
 }
 
 .header-nav a:hover {
@@ -52,6 +54,7 @@ header {
     line-height: 110%;
     margin-bottom: 10px;
 }
+
 .logo p {
     font-family: var(--font-main);
     color: var(--color-light-xl);
@@ -63,8 +66,11 @@ header {
 
 @media (max-width: 768px) {
     header {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    header .wrapper {
+        padding: 0 30px;
+    }
 }
