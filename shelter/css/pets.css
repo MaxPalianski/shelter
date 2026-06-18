@@ -3,7 +3,6 @@
 }
 
 .pets-header-wrapper header {
-    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -150,6 +149,10 @@
 @media (max-width: 768px) {
     .pets-page {
         padding-bottom: 80px;
+    }
+    .pets-header-wrapper {
+        width: 100%;
+        
     }
     .pets-cards {
         grid-template-columns: repeat(2, 1fr);

@@ -64,13 +64,38 @@ header {
     line-height: 100%;
 }
 
+.burger {
+    display: none;
+}
+
 @media (max-width: 768px) {
     header {
         padding-top: 30px;
         padding-bottom: 0;
     }
-
+    .header-nav ul {
+        margin-left:80px;
+    }
     header .wrapper {
         padding: 0 30px;
+    }
+    
+}
+@media (max-width:767px) {
+    .header-nav ul {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .burger span {
+        width: 30px;
+        height: 2px;
+        background-color: var(--color-primary);
     }
 }
