@@ -105,3 +105,5 @@
 .button-arrow:hover {
     background-color: var(--color-primary);
 }
+
+@media (max-width: 768)
