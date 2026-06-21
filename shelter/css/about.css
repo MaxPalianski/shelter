@@ -63,6 +63,7 @@
 @media (max-width: 767px) {
     .about {
         padding-top: 42px;
+        padding-bottom: 42px;
     }
     .about .wrapper {
         padding-left:25px;

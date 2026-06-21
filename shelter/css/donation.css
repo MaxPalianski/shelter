@@ -91,10 +91,59 @@
     .donation {
         padding-bottom: 110px;
     }
+
     .donation .wrapper {
-       flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
+
     .donation-img {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .donation {
+        padding-top: 42px;
+        padding-bottom: 42px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .donation-content {
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+
+    .donation-content h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .donation-desc {
+        text-align: center;
+        white-space: nowrap;
+        line-height: 160%;
+        letter-spacing: 0em;
+    }
+    .donation-card {
+        max-width: 281px;
+    }
+    .card-number {
+        font-size: 15px;
+    }
+    .donation-legal {
+        width: 280px;
+        height: 90px;
+        margin-left:10px;
+        margin-right:10px;;
+        text-align: justify;
+    }
+    .donation-img {
+        width: 260px;
+        height: 136px;
+        margin-top: 0;
+    }
+    .donation-img img {
+        transform: none;
     }
 }
