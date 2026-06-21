@@ -98,4 +98,8 @@ header {
         height: 2px;
         background-color: var(--color-primary);
     }
+    
+    header .wrapper {
+        padding: 0 20px;
+    }
 }

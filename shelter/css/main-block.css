@@ -114,3 +114,34 @@
         margin-right: 30px;
     }
 }
+
+@media (max-width:767px) {
+    .promo .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .promo-content {
+        padding-top: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo-title {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        max-width: 200px;
+    }
+    .promo-desc {
+        font-size: 15px;
+        text-align: center;
+        max-width: 300px;
+    }
+     .promo-img {
+        height: auto;
+        width: 260px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 105px;
+        align-self: flex-end;
+    }
+}
