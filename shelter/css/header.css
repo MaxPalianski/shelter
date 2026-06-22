@@ -73,18 +73,70 @@ header {
         padding-top: 30px;
         padding-bottom: 0;
     }
+
     .header-nav ul {
-        margin-left:80px;
+        margin-left: 80px;
     }
+
     header .wrapper {
         padding: 0 30px;
     }
-    
+
 }
+
 @media (max-width:767px) {
     .header-nav ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
     }
+
+    .header-nav a {
+        font-size: 32px;
+        line-height: 160%;
+        font-weight: 400;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--color-dark-3xl);
+        padding-top: 150px;
+        box-sizing: border-box;
+        transition: right 0.3s ease;
+        z-index: 5;
+    }
+
+    .header-nav.open {
+        right: 0;
+        position:fixed;
+    }
+
+    .header-nav.open a {
+        color: var(--color-dark-s);
+        border-bottom: 3px solid transparent;
+    }
+
+    .header-nav.open a:hover{
+        color: var(--color-light-s);
+        border-bottom: 3px solid var(--color-primary);
+    }
+
+    .header-nav.open a.active {
+        color: var(--color-light-s);
+        border-bottom: 3px solid var(--color-primary);
+    }
+
+    .header-nav a.active {
+        pointer-events: auto;
+    }
+
     .burger {
         display: flex;
         flex-direction: column;
@@ -92,14 +144,44 @@ header {
         width: 30px;
         height: 22px;
         cursor: pointer;
+        z-index: 10;
+        transition: 0.3s ease;
     }
+
+    .burger.open {
+        transform: rotate(90deg);
+    }
+
     .burger span {
         width: 30px;
         height: 2px;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary);   
     }
-    
+
     header .wrapper {
         padding: 0 20px;
     }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(41, 41, 41, 0.6);
+        z-index: 4;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
+
 }
