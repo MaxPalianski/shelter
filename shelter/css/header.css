@@ -183,5 +183,13 @@ header {
     body.no-scroll {
         overflow: hidden;
     }
-
+    .logo {
+        transition: color 0.3s ease;
+    }
+    .logo.open .logo-title{
+        color: var(--color-primary);
+    }
+    .logo.open p {
+        color: var(--color-light-xl);
+    }
 }
