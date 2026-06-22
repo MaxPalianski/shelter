@@ -1,0 +1,45 @@
+@import "./css/vars.css";
+@import "./css/header.css";
+@import "./css/main-block.css";
+@import "./css/about.css";
+@import "./css/friends.css";
+@import "./css/help.css";
+@import "./css/donation.css";
+@import "./css/pets.css";
+@import "./css/footer.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*
+body {
+    cursor: url(./assets/icons/icon.png), default;
+}
+
+a,
+button,
+.promo-btn,
+.btn-primary,
+.btn-secondary,
+.header-nav a  {
+    cursor: url('./assets/icons/icon-hover.png'), default;
+}
+*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 40px;
+}
