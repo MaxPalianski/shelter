@@ -105,11 +105,13 @@ body.no-scroll {
 @media (max-width: 950px) {
     .popup-card {
         width: 630px;
-        height: 350px;
+        height: auto;
+        min-height: 350px;
     }
     .popup-img img {
         width: 350px;
-        height: 350px;
+        height: 100%;
+        object-fit: cover;
     }
     .popup-info {
         padding: 30px 10px 30px 20px;
