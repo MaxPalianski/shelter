@@ -43,6 +43,9 @@ function renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage) {
         btnRight.disabled = false;
         btnDoubleRight.disabled = false;
     }
+
+
+    
 }
 export async function initPagination() {
     let cardsContainer = document.querySelector('.pets-cards');
