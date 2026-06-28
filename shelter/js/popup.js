@@ -1,8 +1,6 @@
 import { getPetsData } from './api.js';
 export async function initPopup() {
     const petsData = await getPetsData();
-    console.log(petsData);
-
     const popup = document.querySelector('.popup');
     const cards = document.querySelectorAll('.card');
     const popupImg = document.querySelector('.popup-img');
@@ -12,11 +10,7 @@ export async function initPopup() {
     cards.forEach(card => {
         card.addEventListener('click', () => {
             const petName = card.querySelector('h3').textContent;
-            console.log('Кликнули на:', petName);
-
             const petInfo = petsData.find(pet => pet.name === petName);
-            console.log('Данные питомца:', petInfo);
-
             const petImgName = petInfo.name.toLowerCase();
             popupImg.innerHTML = `<img src="${petInfo.img}" alt="${petInfo.name}">`;
             popupInfo.innerHTML = `
