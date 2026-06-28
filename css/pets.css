@@ -96,6 +96,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px 40px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.pets-cards.fade {
+    opacity: 0;
 }
 
 .pets-cards .card h2 {
@@ -168,10 +174,6 @@
         margin-bottom: 35px;
     }
 
-    .pets-cards .card:nth-child(n + 7) {
-        display: none;
-    }
-
     .pagination {
         margin-top: 40px;
     }
@@ -221,10 +223,6 @@
         justify-items: center;
         gap: 30px;
         width: 100%;
-    }
-
-    .pets-cards .card:nth-child(n + 4) {
-        display: none;
     }
 
     .pagination {

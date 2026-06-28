@@ -45,7 +45,7 @@ function renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage) {
     }
 
 
-    
+
 }
 export async function initPagination() {
     let cardsContainer = document.querySelector('.pets-cards');
@@ -65,31 +65,40 @@ export async function initPagination() {
     renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
 
     let maxPage = fullPetsList.length / itemsPerPage;
+    function changePage(newPage) {
+        cardsContainer.classList.add('fade');
+        setTimeout(() => {
+            currentPage = newPage;
+            renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
+            setTimeout(() => {
+            cardsContainer.classList.remove('fade');
+        }, 20);
+        }, 300);
+    }
+
     const btnRight = document.querySelector('.pagination-right');
     btnRight.addEventListener('click', () => {
         if (currentPage < maxPage) {
-            currentPage++;
-            renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
+            changePage(currentPage + 1);
         }
     });
     const btnLeft = document.querySelector('.pagination-left');
     btnLeft.addEventListener('click', () => {
         if (currentPage > 1) {
-            currentPage--;
-            renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
+            changePage(currentPage - 1);
         }
     });
     const btnDoubleLeft = document.querySelector('.pagination-double-left');
     btnDoubleLeft.addEventListener('click', () => {
-        currentPage = 1;
-        renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
-
+        if (currentPage !== 1) {
+            changePage(1);
+        }
     });
 
     const btnDoubleRight = document.querySelector('.pagination-double-right');
     btnDoubleRight.addEventListener('click', () => {
-        currentPage = maxPage;
-        renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
+        if (currentPage !== maxPage) {
+            changePage(maxPage);
+        }
     });
-
 }
