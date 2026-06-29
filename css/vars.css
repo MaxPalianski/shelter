@@ -17,3 +17,10 @@
     --font-main: 'Arial', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+

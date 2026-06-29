@@ -180,9 +180,6 @@ header {
         pointer-events: auto;
     }
 
-    body.no-scroll {
-        overflow: hidden;
-    }
     .logo {
         transition: color 0.3s ease;
     }

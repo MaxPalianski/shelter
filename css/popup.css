@@ -40,10 +40,6 @@
     position: relative;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
-
 .popup-img img {
     width: 500px;
     height: 500px;
