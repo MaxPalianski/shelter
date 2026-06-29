@@ -121,6 +121,15 @@
     background-color: var(--color-primary);
 }
 
+@media (max-width: 1220px) {
+    .slider-cards {
+        gap: 20px;
+    }
+    .slider-container {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .slider-cards {
         gap: 40px;
