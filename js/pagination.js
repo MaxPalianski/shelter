@@ -60,7 +60,7 @@ export async function initPagination() {
     } else if (screenWidth >= 768 && screenWidth <= 1279) {
         itemsPerPage = 6;
     } else {
-        itemsPerPage = 4;
+        itemsPerPage = 3;
     }
     renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
 
@@ -71,8 +71,8 @@ export async function initPagination() {
             currentPage = newPage;
             renderPage(cardsContainer, fullPetsList, currentPage, itemsPerPage);
             setTimeout(() => {
-            cardsContainer.classList.remove('fade');
-        }, 20);
+                cardsContainer.classList.remove('fade');
+            }, 20);
         }, 300);
     }
 
